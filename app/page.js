@@ -1,10 +1,96 @@
+"use client";
 
+import Header from './components/Header.jsx'; 
+import AccordionBlock from './components/AccordionBlock.jsx'
+import FAQ from './components/FAQ.jsx';
+import { useEffect } from 'react';
 
 export default function Home() {
   return (
     <>
-      <h2>Hello World</h2>
-      <h3>what the hell is going on</h3>
+      <Header />
+      <div className="body-home">
+        <img className="hero-image" src="/images/hero-image.png"></img>
+        <div className="page-divider"></div>
+        <div className="about-block">
+          <div className="about-left_aligned">
+            <img className="about-image" src="/images/placeholder.png"></img>
+            <img className="about-image" src="/images/placeholder.png"></img>
+          </div>
+          <div className="about-right_aligned">
+            <h2 className="about-title_text">About Us</h2>
+            <p className="about-body_text">
+              Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, 
+              ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. 
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, 
+              ac scelerisque ante pulvinar. Donec ut rhoncus ex. 
+              Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. 
+              Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+            </p>
+            <p className="about-body_text">
+              Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, 
+              ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. 
+              Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim egestas, 
+              ac scelerisque ante pulvinar. Donec ut rhoncus ex. 
+              Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. 
+              Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+            </p>
+          </div>
+        </div>
+        <div className="page-divider"></div>
+        <div className="accomendation-block">
+          <div className="accomendation-container">
+            <div className="accomendation-title_block">
+              <h2 className="accomendation-title_text">Accomendation</h2>
+              <p className="accomendation-subtitle_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.</p>
+            </div>
+            <div className="blocked-hotel_container">
+              <div className="blocked-hotel-title_container">
+                <h3 className="blocked-hotel_title-text">Blocked Hotel Spaces ($$)</h3>
+                <p className="blocked-hotel_body-text">
+                  Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis. 
+                  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                </p>
+              </div>
+              <a className="blocked-hotel_link" href="url">Link to Hotel Website <img src="/icons/arrow-icon.png" alt="Arrow Icon" /></a>
+            </div>
+            <div className="alternative_hotel-container">
+              <h2 className="alternative_hotel-title">Alternative Hotels</h2>
+              <div className="alternative_hotel-nested_container">
+                <div className="alternative_hotel-block">
+                  <div className="alternative_hotel-title_block">
+                    <h2 className="alternative_hotel-block_title">Hotel #1 ($)</h2>
+                    <p className="alternative_hotel-block_text">Jorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <a className="blocked-hotel_link" href="url">Link to Hotel Website <img src="/icons/arrow-icon.png" alt="Arrow Icon" /></a>
+                </div>
+                <div className="alternative_hotel-block">
+                  <div className="alternative_hotel-title_block">
+                    <h2 className="alternative_hotel-block_title">Hotel #1 ($)</h2>
+                    <p className="alternative_hotel-block_text">Jorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                  </div>
+                  <a className="blocked-hotel_link" href="url">Link to Hotel Website <img src="/icons/arrow-icon.png" alt="Arrow Icon" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="page-divider"></div>
+        <div className="FAQ-block">
+          <div className="FAQ-container">
+            <div className="FAQ-title_row">
+              <h2 className="FAQ-title_text">FAQs</h2>
+              <div className="FAQ-title_right-aligned">
+                <p className="FAQ-subtitle_text">Still have questions</p>
+                <a className="FAQ-subtitle_link" href="url">Reach Out to Us</a>
+              </div>
+            </div>
+            <div className="FAQ-accordion_container">
+              <FAQ /> {/* Render FAQ here */}
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 }
