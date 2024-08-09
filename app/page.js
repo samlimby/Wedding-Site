@@ -25,8 +25,8 @@ export default function Home() {
         <div className="page-divider"></div>
         <div className="about-block">
           <div className="about-left_aligned">
-            <img className="about-image" src="/images/placeholder.png"></img>
-            <img className="about-image" src="/images/placeholder.png"></img>
+            <img id="about-image1" className="about-image" src="/images/placeholder.png" alt="About Image 1"></img>
+            <img id="about-image2" className="about-image" src="/images/placeholder.png" alt="About Image 2"></img>
           </div>
           <div className="about-right_aligned">
             <h2 className="about-title_text">About Us</h2>

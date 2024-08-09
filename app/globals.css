@@ -63,6 +63,31 @@ body {
   align-self: stretch;
 }
 
+.menu-icon {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  position: absolute;
+  right: 20px;
+  top: 60px; /* Adjust as needed */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  font-size: 18px;
+  cursor: pointer;
+}
+
 .primary-action {
   display: flex;
   padding: 12px;
@@ -78,6 +103,23 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 100%; 
+}
+
+@media (max-width: 720px) {
+  .header-tabset {
+    display: none; /* Hide the tabset on mobile */
+  }
+
+  .mobile-menu {
+    position: relative;
+  }
+}
+
+
+@media (max-width: 640px) {
+  .header {
+    padding: 20px 24px;
+  }
 }
 
 /* Home Page */
@@ -109,6 +151,7 @@ body {
 
 .hero-image {
   display: flex;
+  min-width: 560px;
   width: 100%;
   padding-bottom: 32px;
 }
@@ -197,11 +240,65 @@ body {
   cursor: pointer;
 }
 
+@media (max-width: 910px) {
+  .hero-container {
+    width: 320px;
+  }
+
+  .hero-header_subtitle {
+    font-size: 20px;
+  }
+
+  .hero-header_title {
+    font-size: 48px;
+  }
+
+  .hero-header_title2 {
+    font-size: 24px;
+  }
+
+  .hero-header_button {
+    padding: 12px 8px;
+  }
+  
+}
+
+@media (max-width: 560px) {
+  .hero-container {
+    width: 240px;
+    gap: 12px;
+  }
+
+  .hero-header_subtitle {
+    font-size: 16px;
+  }
+
+  .hero-header_title {
+    font-size: 32px;
+  }
+
+  .hero-header_title2 {
+    font-size: 20px;
+  }
+
+  .hero-header_button {
+    width: 80px;
+    font-size: 12px;
+    margin: auto;
+  }
+
+  .hero-container_divider {
+    width: 100%;
+  }
+  
+}
+
 /* Home Page - About Block */
 
 .about-block {
   display: flex;
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
   padding: 80px 120px;
   gap: 80px;
   box-sizing: border-box;
@@ -251,6 +348,58 @@ body {
   line-height: 120%;
 }
 
+@media (max-width: 1280px) {
+  .about-block {
+    gap: 56px;
+  }
+
+  .about-title_text {
+    font-size: 40px;
+  }
+
+  .about-body_text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 910px) {
+  .about-block {
+    gap: 40px;
+    padding: 24px 40px;
+  }
+
+  .about-title_text {
+    font-size: 32px;
+  }
+
+  .about-body_text {
+    font-size: 16px;
+  }
+
+  .about-left_aligned {
+    gap: 24px;
+  }
+  
+}
+
+@media (max-width: 640px) {
+  .about-block {
+    flex-direction: column;
+    padding: 16px 20px; 
+    width: 100%;
+  }
+
+  .about-left_aligned {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  #about-image2 {
+    display: none; 
+  }
+
+}
+
 /* Home Page - Accomendation Block */
 
 .accomendation-block {
@@ -282,7 +431,7 @@ body {
   align-self: stretch;
 }
 
-.accomendation-title_block {
+.accomendation-title_text {
   color: #1E1E1E;
   font-family: Didot;
   font-size: 28px;
@@ -412,6 +561,74 @@ body {
   line-height: 120%; /* 24px */
 }
 
+@media (max-width: 910px) {
+  .accomendation-title_block {
+    gap: 4px;
+  }
+
+  .accomendation-container {
+    gap: 20px;
+  }
+
+  .accomendation-title_text {
+    font-size: 24px;
+  }
+  
+  .accomendation-subtitle_text {
+    font-size: 16px;
+  }
+
+  .alternative_hotel-title {
+    font-size: 20px;
+  }
+
+  .alternative_hotel-block_title {
+    font-size: 24px;
+  }
+  
+  .alternative_hotel-block_text {
+    font-size: 16px;
+  }
+
+  .alternative_hotel-nested_container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .alternative_hotel-block {
+    width: 100%;
+    padding: 24px 16px 32px 16px;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+  .accomendation-block {
+    padding: 40px 24px;
+    gap: 12px;
+  }
+
+  .blocked-hotel_container {
+    padding: 24px 16px 32px 16px;
+  }
+
+  .alternative_hotel-container {
+    gap: 8px;
+  }
+
+  .alternative_hotel-block {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 560px) {
+  .alternative_hotel-nested_container {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+
 /* Home Page - FAQ Block */
 
 .FAQ-block {
@@ -483,6 +700,12 @@ body {
   align-self: stretch;
 }
 
+@media (max-width: 640px) {
+  .FAQ-block {
+    padding: 40px 24px 140px 24px;
+  }
+}
+
 /* Accordion Block & FAQ Component */ 
 
 .FAQ {
@@ -541,4 +764,5 @@ body {
   line-height: 120%; /* 24px */
   padding-bottom: 8px;
 }
+
 
