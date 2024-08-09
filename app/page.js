@@ -10,7 +10,18 @@ export default function Home() {
     <>
       <Header />
       <div className="body-home">
-        <img className="hero-image" src="/images/hero-image.png"></img>
+        <div className="hero-block">
+          <img className="hero-image" src="/images/hero-image.png"></img>
+          <div className="hero-container">
+            <div className="hero-header">
+              <h4 className="hero-header_subtitle">Wedding of</h4>
+              <h2 className="hero-header_title">Meg & Sam</h2>
+            </div>
+            <div className="hero-container_divider"></div>
+            <h3 className="hero-header_title2">June 7th, 2025</h3>
+            <button className="hero-header_button">RSVP</button>
+          </div>
+        </div>
         <div className="page-divider"></div>
         <div className="about-block">
           <div className="about-left_aligned">
@@ -85,9 +96,7 @@ export default function Home() {
                 <a className="FAQ-subtitle_link" href="url">Reach Out to Us</a>
               </div>
             </div>
-            <div className="FAQ-accordion_container">
-              <FAQ /> {/* Render FAQ here */}
-            </div>
+            <FAQ />
           </div>
         </div>
       </div>

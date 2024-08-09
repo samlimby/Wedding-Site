@@ -11,7 +11,7 @@ function FAQ() {
   ];
 
   return (
-    <div className="faq">
+    <div className="FAQ">
       {questions.map((question, index) => (
         <Accordion key={index} title={question.title} content={question.content} />
       ))}
