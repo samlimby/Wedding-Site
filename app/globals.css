@@ -204,6 +204,7 @@ body {
   width: 1440px;
   padding: 80px 120px;
   gap: 80px;
+  box-sizing: border-box;
 }
 
 .about-left_aligned {
