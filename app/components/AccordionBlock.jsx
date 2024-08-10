@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Img from 'next/image';
 
 function Accordion({ title, content }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,7 @@ function Accordion({ title, content }) {
     <div className="accordion">
       <div className="accordion-header" onClick={toggleAccordion}>
         <h3 className="accordion-header_title">{title}</h3>
-        <img
+        <Img
             src="/icons/arrow-icon_lg.png"
             style={{ transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}
             alt="Arrow Icon"

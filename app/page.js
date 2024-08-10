@@ -4,6 +4,7 @@ import Header from './components/Header.jsx';
 import AccordionBlock from './components/AccordionBlock.jsx'
 import FAQ from './components/FAQ.jsx';
 import { useEffect } from 'react';
+import Img from 'next/image';
 
 export default function Home() {
   return (
