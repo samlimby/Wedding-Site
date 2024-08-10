@@ -4,7 +4,7 @@ import Header from './components/Header.jsx';
 import AccordionBlock from './components/AccordionBlock.jsx'
 import FAQ from './components/FAQ.jsx';
 import { useEffect } from 'react';
-import Img from 'next/image';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
       <Header />
       <div className="body-home">
         <div className="hero-block">
-          <Img className="hero-image" src="/images/hero-image.png" />
+          <Image className="hero-image" src="/images/hero-image.png" />
           <div className="hero-container">
             <div className="hero-header">
               <h4 className="hero-header_subtitle">Wedding of</h4>
@@ -26,8 +26,8 @@ export default function Home() {
         <div className="page-divider"></div>
         <div className="about-block">
           <div className="about-left_aligned">
-            <Img id="about-image1" className="about-image" src="/images/placeholder.png" alt="About Image 1" />
-            <Img id="about-image2" className="about-image" src="/images/placeholder.png" alt="About Image 2" />
+            <Image id="about-image1" className="about-image" src="/images/placeholder.png" alt="About Image 1" />
+            <Image id="about-image2" className="about-image" src="/images/placeholder.png" alt="About Image 2" />
           </div>
           <div className="about-right_aligned">
             <h2 className="about-title_text">About Us</h2>
