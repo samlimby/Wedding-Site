@@ -16,6 +16,8 @@ function Accordion({ title, content }) {
         <h3 className="accordion-header_title">{title}</h3>
         <Image
             src="/icons/arrow-icon_lg.png"
+            width={24} // Set this to the actual width of the image in pixels
+            height={24} // Set this to the actual height of the image in pixels
             style={{ transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}
             alt="Arrow Icon"
         />

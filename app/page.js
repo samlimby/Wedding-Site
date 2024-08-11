@@ -12,7 +12,16 @@ export default function Home() {
       <Header />
       <div className="body-home">
         <div className="hero-block">
-          <Image className="hero-image" src="/images/hero-image.png" />
+        <div style={{ width: '100%', minWidth: '560px', paddingBottom: '32px' }}>
+          <Image
+            className="hero-image"
+            src="/images/hero-image.png"
+            alt="Hero Image"
+            width={1400}  // Set to the actual width of your image
+            height={400}  // Set to the actual height of your image
+            style={{ width: '100%', height: 'auto' }} // Ensures the image scales properly
+          />
+        </div>
           <div className="hero-container">
             <div className="hero-header">
               <h4 className="hero-header_subtitle">Wedding of</h4>
@@ -26,8 +35,26 @@ export default function Home() {
         <div className="page-divider"></div>
         <div className="about-block">
           <div className="about-left_aligned">
-            <Image id="about-image1" className="about-image" src="/images/placeholder.png" alt="About Image 1" />
-            <Image id="about-image2" className="about-image" src="/images/placeholder.png" alt="About Image 2" />
+            <div style={{ position: 'relative', width: '100%', height: '400px' }}>  
+              <Image
+                id="about-image1"
+                className="about-image"
+                src="/images/placeholder.png"
+                alt="About Image 1"
+                layout="fill"
+                objectFit="cover"  // Adjust objectFit to 'contain' if you want the entire image visible
+              />
+            </div>
+            <div style={{ position: 'relative', width: '100%', height: '400px' }}>  
+              <Image
+                id="about-image1"
+                className="about-image"
+                src="/images/placeholder.png"
+                alt="About Image 2"
+                layout="fill"
+                objectFit="cover"  // Adjust objectFit to 'contain' if you want the entire image visible
+              />
+            </div>
           </div>
           <div className="about-right_aligned">
             <h2 className="about-title_text">About Us</h2>
