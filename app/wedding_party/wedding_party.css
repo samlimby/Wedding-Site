@@ -1,4 +1,4 @@
-.party-body {
+.wp-party-body {
     display: flex;
     flex-direction: column;
     max-width: 1440px;
@@ -8,7 +8,7 @@
     margin: auto;
 }
 
-.grid-block {
+.wp-grid-block {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Four equal columns */
     padding: 40px 0px;
@@ -17,7 +17,7 @@
     margin: auto;
 }
 
-.member-card {
+.wp-member-card {
     display: flex;
     width: 240px;
     flex-direction: column;
@@ -25,7 +25,7 @@
     gap: 12px;
 }
 
-.card-text_container {
+.wp-card-text_container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -33,14 +33,14 @@
     align-self: stretch;
 }
 
-.card-text_block {
+.wp-card-text_block {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
 }
 
-.card-title_text {
+.wp-card-title_text {
     color: #1E1E1E;
     font-family: Didot;
     font-size: 32px;
@@ -50,7 +50,7 @@
     letter-spacing: -0.352px;
 }
 
-.card-subtitle_text {
+.wp-card-subtitle_text {
     color: #6C6C6C;
     font-family: Lato;
     font-size: 12px;
@@ -60,7 +60,7 @@
     letter-spacing: -0.132px;
 }
 
-.card-subtitle2_text {
+.wp-card-subtitle2_text {
     color: #1E1E1E;
     font-family: Didot;
     font-size: 16px;
@@ -70,7 +70,7 @@
     letter-spacing: -0.176px;
 }
 
-.card-body_text {
+.wp-card-body_text {
     color: #404040;
     font-family: Lato;
     font-size: 14px;
@@ -80,7 +80,7 @@
     letter-spacing: -0.154px;
 }
 
-.card-divider {
+.wp-card-divider {
     background-color: #D9D9D9;
     height: 1px;
     align-self: stretch;
@@ -89,37 +89,37 @@
 /* Responsive Breakpoints */
 
 @media (max-width: 1200px) {
-    .grid-block {
+    .wp-grid-block {
         grid-template-columns: repeat(3, 1fr); /* 3 cards per row for small desktop */
     }
 }
 
 @media (max-width: 810px) {
-    .grid-block {
+    .wp-grid-block {
         grid-template-columns: repeat(2, 1fr); /* 2 cards per row for tablets */
         gap: 24px; 
     }
 }
 
 @media (max-width: 560px) {
-    .grid-block {
+    .wp-grid-block {
         width: 100%;
         gap: 40px; 
         grid-template-columns: 1fr; /* 1 card per row for phones */
     }
 
-    .member-card {
+    .wp-member-card {
         width: 100%;
         padding-left: 24px;
         padding-right: 24px;
         box-sizing: border-box;
     }
 
-    .card-text_block {
+    .wp-card-text_block {
         width: 100%;
     }
 
-    .member-image{
+    .wp-member-image{
         width: 100%;
         height: auto;
     }

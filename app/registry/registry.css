@@ -1,4 +1,4 @@
-.party-body {
+.re-party-body {
     display: flex;
     flex-direction: column;
     max-width: 1440px;
@@ -8,7 +8,7 @@
     margin: auto;
 }
 
-.grid-block {
+.re-grid-block {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Four equal columns */
     padding: 40px 0px;
@@ -17,7 +17,7 @@
     margin: auto;
 }
 
-.member-card {
+.re-member-card {
     display: flex;
     width: 320px;
     padding: 20px 16px 24px 16px;
@@ -31,28 +31,28 @@
     box-sizing: border-box;
 }
 
-.card-text_container {
+.re-card-text_container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
 }
 
-.card-text_block {
+.re-card-text_block {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
 }
 
-.card-title_block {
+.re-card-title_block {
     display: flex;
     align-items: center;
     gap: 12px;
     align-self: stretch;
 }
 
-.card-title_text {
+.re-card-title_text {
     color: #1E1E1E;
     font-family: Didot;
     font-size: 32px;
@@ -62,7 +62,7 @@
     letter-spacing: -0.352px;
 }
 
-.card-subtitle_text {
+.re-card-subtitle_text {
     color: #6C6C6C;
     font-family: Lato;
     font-size: 12px;
@@ -72,7 +72,7 @@
     letter-spacing: -0.132px;
 }
 
-.card-subtitle2_text {
+.re-card-subtitle2_text {
     color: #1E1E1E;
     font-family: Didot;
     font-size: 16px;
@@ -82,7 +82,7 @@
     letter-spacing: -0.176px;
 }
 
-.card-body_text {
+.re-card-body_text {
     color: #404040;
     font-family: Lato;
     font-size: 14px;
@@ -92,20 +92,20 @@
     letter-spacing: -0.154px;
 }
 
-.card-divider {
+.re-card-divider {
     background-color: #D9D9D9;
     height: 1px;
     align-self: stretch;
 }
 
-.upper-card_row {
+.re-upper-card_row {
     display: flex;
     width: 100%;
     gap: 16px;
     flex-direction: column;
 }
 
-.button-wrapper {
+.re-button-wrapper {
     display: flex;
     width: 100%;
     padding-left: 24px;
@@ -113,7 +113,7 @@
     box-sizing: border-box;
 }
 
-.secondary-action {
+.re-secondary-action {
     display: flex;
     width: 100%;
     flex: 1; 
@@ -133,23 +133,23 @@
     text-decoration: none; /* Ensure the button style is consistent */
 }
 
-.button-wrapper a {
+.re-button-wrapper a {
     width: 100%;
 }
   
-.secondary-action:hover {
+.re-secondary-action:hover {
     cursor: pointer;
 }
 
 /* Responsive Breakpoints */
 
 @media (max-width: 1440px) {
-    .grid-block {
+    .re-grid-block {
         grid-template-columns: repeat(3, 1fr); /* 3 cards per row for small desktop */
         padding: 40px 40px;
     }
 
-    .member-card {
+    .re-member-card {
         width: 100%;
         padding-left: 24px;
         padding-right: 24px;
@@ -158,19 +158,18 @@
 }
 
 @media (max-width: 1024px) {
-    .grid-block {
+    .re-grid-block {
         grid-template-columns: repeat(2, 1fr); /* 2 cards per row for tablets */
         gap: 24px; 
     }
 }
 
 @media (max-width: 560px) {
-    .grid-block {
+    .re-grid-block {
         grid-template-columns: repeat(1, 1fr); 
     }
 
-    .card-text_block {
+    .re-card-text_block {
         width: 100%;
     }
-
 }
