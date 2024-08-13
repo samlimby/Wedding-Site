@@ -1,13 +1,20 @@
+.party-body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
 .grid-block {
     display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
     padding: 40px 0px;
-    flex-direction: column;
     justify-content: center;
-    column-gap: 50px;
-    row-gap: 50px;
-    align-items: center;
+    gap: 50px; 
     margin: auto;
-    gap: 40px;
 }
 
 .member-card {
@@ -16,4 +23,104 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+}
+
+.card-text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.card-text_block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.card-title_text {
+    color: #1E1E1E;
+    font-family: Didot;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.352px;
+}
+
+.card-subtitle_text {
+    color: #6C6C6C;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+    letter-spacing: -0.132px;
+}
+
+.card-subtitle2_text {
+    color: #1E1E1E;
+    font-family: Didot;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: -0.176px;
+}
+
+.card-body_text {
+    color: #404040;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.154px;
+}
+
+.card-divider {
+    background-color: #D9D9D9;
+    height: 1px;
+    align-self: stretch;
+}
+
+/* Responsive Breakpoints */
+
+@media (max-width: 1200px) {
+    .grid-block {
+        grid-template-columns: repeat(3, 1fr); /* 3 cards per row for small desktop */
+    }
+}
+
+@media (max-width: 810px) {
+    .grid-block {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row for tablets */
+        gap: 24px; 
+    }
+}
+
+@media (max-width: 560px) {
+    .grid-block {
+        width: 100%;
+        gap: 40px; 
+        grid-template-columns: 1fr; /* 1 card per row for phones */
+    }
+
+    .member-card {
+        width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+        box-sizing: border-box;
+    }
+
+    .card-text_block {
+        width: 100%;
+    }
+
+    .member-image{
+        width: 100%;
+        height: auto;
+    }
 }
