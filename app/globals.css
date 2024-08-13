@@ -105,6 +105,10 @@ body {
   line-height: 100%; 
 }
 
+.primary-action:hover {
+  cursor: pointer;
+}
+
 @media (max-width: 720px) {
   .header-tabset {
     display: none; /* Hide the tabset on mobile */
